@@ -4,6 +4,7 @@ from kafka import KafkaConsumer
 import psycopg2
 import time
 
+
 import calculate
 
 # Configuración básica para mostrar logs

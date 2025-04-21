@@ -16,10 +16,10 @@ Data Engineer project for a pipeline that take data files and using Microbatchin
 ## 🗂️ Project Organization
 
 ```
-├── DB.sql						  <- Script with the tables in the postgres database created.
-├── README.md					  <- The top-level README for developers using this project.
-├── batch_control.lua		<- Lua script, which uses Fluentbit for processing towards Kafka
-├── data 						    <- Folder with the set of data files
+├── DB.sql    <- Script with the tables in the postgres database created.
+├── README.md   <- The top-level README for developers using this project.
+├── batch_control.lua   <- Lua script, which uses Fluentbit for processing towards Kafka
+├── data    <- Folder with the set of data files
 │   ├── dataset-1.txt
 │   ├── dataset-2.txt
 │   ├── dataset-3.txt
@@ -30,19 +30,19 @@ Data Engineer project for a pipeline that take data files and using Microbatchin
 │   └── tarifa_por_destino (1).csv
 │
 │
-├── docker-compose.yml	<- Contains the Docker infrastructure to deploy the solution
-├── fluent-bit.conf			<- File that configures the pipeline from text files to Kafka
+├── docker-compose.yml    <- Contains the Docker infrastructure to deploy the solution
+├── fluent-bit.conf   <- File that configures the pipeline from text files to Kafka
 ├── gitignore.txt 				
-├── log							    <- folder that contains the sqlite file, with information of 
+├── log	    <- folder that contains the sqlite file, with information of 
 │   │                      file procesed by fluentbit
 │   │
 │   └── flb_dataet.db
-├── parser.conf 				<- Contains the pattern of the data that have to read fluentbit
-└── python              <- Project that manage from Kafka to the database storage    
-    ├── app.log					<- Logs with development issues to monitor the pipeline
-    ├── calculate.py 		<- Calculate every row taken from kafka and calculate with pandas
-    ├── processor.py 		<- Manage the process from consume kafka until storage in the database
-    └── requirements.txt<- The requirements file for reproducing the analysis environment, e.g.
+├── parser.conf   <- Contains the pattern of the data that have to read fluentbit
+└── python    <- Project that manage from Kafka to the database storage    
+    ├── app.log   <- Logs with development issues to monitor the pipeline
+    ├── calculate.py    <- Calculate every row taken from kafka and calculate with pandas
+    ├── processor.py    <- Manage the process from consume kafka until storage in the database
+    └── requirements.txt  <- The requirements file for reproducing the analysis environment, e.g.
 │                          generated with `pip freeze > requirements.txt`
 
 ```
@@ -115,20 +115,6 @@ fix(lambda)!: Change of the orchestration to step functions.	```
 **Programming Language:** Python 🐍
 
 **Principal Libraries Used** 
-
-Package         Version
---------------- -----------
-kafka-python    2.0.2
-numpy           2.2.4
-pandas          2.2.3
-pip             22.0.2
-psycopg2-binary 2.9.6
-python-dateutil 2.9.0.post0
-pytz            2025.2
-setuptools      59.6.0
-six             1.17.0
-tzdata          2025.2
-
 
 * kafka-python==2.0.2
 * numpy==2.2.4
